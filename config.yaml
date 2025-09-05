@@ -1,0 +1,3 @@
+#### the model used within Ollama serving, if you are using vLLM change the serving/inference logic on agents/chatbot.py, it's right under the ChatBot class
+
+model: "llama3.1:8b-instruct-q4_K_M"
