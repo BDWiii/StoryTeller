@@ -16,9 +16,9 @@ Even in casual chat, the agent can respond in poetic tones — turning every con
 🧩 How It Works
 
 At its core, the agent combines:
--Router Node → Chooses between chatting and storytelling.
--Chat Node → Engages in poetic conversation, keeping track of history.
--Storyteller Node →
+- Router Node → Chooses between chatting and storytelling.
+- Chat Node → Engages in poetic conversation, keeping track of history.
+- Storyteller Node →
 Searches the web for relevant content.
 Crafts a story tuned to age (kids/adults).
 Returns a poetic narrative enriched with real-world knowledge.
@@ -31,11 +31,11 @@ This project imagines a world where awareness campaigns, educational tools, and 
 ---
 🚀 Features
 
-Dual storytelling modes (Kids / Adults).
-Conversational memory with poetic replies.
-Web-integrated storytelling: grounded in facts, elevated by art.
-API-ready (FastAPI backend).
-State management with persistence (SQLite checkpoints).
+* Dual storytelling modes (Kids / Adults).
+* Conversational memory with poetic replies.
+* Web-integrated storytelling: grounded in facts, elevated by art.
+* API-ready (FastAPI backend).
+* State management with persistence (SQLite checkpoints).
 ---
 ⚡ Usage
 
