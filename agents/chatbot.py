@@ -37,7 +37,7 @@ class Chatbot:
 
         build_chatbot.add_node("router", self.router_node)
         build_chatbot.add_node("chat", self.chat_node)
-        build_chatbot.add_node("storyteller", self.storyteller_agent)
+        build_chatbot.add_node("storyteller", self.storyteller_agent_node)
 
         build_chatbot.add_edge("storyteller", END)
         build_chatbot.add_edge("chat", END)
@@ -106,15 +106,20 @@ class Chatbot:
             "history": new_history,
         }
 
-    def storyteller_agent(self, state: states.ChatState):
+    def storyteller_agent_node(self, state: states.ChatState):
         story_state = state["story_state"]
         story_state["task"] = state["task"]
 
         output = self.storyteller_agent.invoke(story_state)
 
+        new_history = state.get("history", [])
+        new_history.append({"role": "user", "content": state["task"]})
+        new_history.append({"role": "assistant", "content": output.get("story", "")})
+
         return {
             "node_name": "storyteller_agent",
             "story_state": output,
-            # "story": output.get("story", ""),
+            "story": output.get("story", ""),
             "retrieved_content": output.get("retrieved_content", []),
+            "history": new_history,
         }

@@ -52,8 +52,9 @@ def _initialize_state(Input) -> ChatState:
         "story_state": {
             "task": "",
             "age": age,
-            "retrieved_content": [],
             "story": "",
+            "retrieved_content": [],
+            "history": [],
             "next_node": "",
             "node_name": "",
         },
