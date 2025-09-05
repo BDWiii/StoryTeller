@@ -4,12 +4,12 @@ checkpoints.sqlite-wal/
 temp.pdf/
 *.pt/
 
-__pycache__/
 *.log
 
 .env
 *.sqlite3
 # Byte-compiled / optimized / DLL files
+__pycache__
 __pycache__/
 **/__pycache__/
 *.py[cod]
