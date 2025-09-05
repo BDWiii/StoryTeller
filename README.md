@@ -12,6 +12,8 @@ This agent uses two voices:
 🧸 Kids Mode — gentle rhymes, simple language, short verses.
 Even in casual chat, the agent can respond in poetic tones — turning every conversation into a moment of art.
 
+![graph](images/graph.png)
+
 ---
 🧩 How It Works
 
